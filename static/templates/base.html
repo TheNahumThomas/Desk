@@ -1,0 +1,19 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <main>
+        {{ block "content" . }}{{ end }}
+    </main>
+    <footer>
+        <p>Desk Copyright 2024. Powered by Me</p>
+    </footer>
+</body>
+</html>
